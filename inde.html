@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danson Gitau Kimani | Software Engineering Student</title>
+    <style>
+        /* General Body Settings */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .main-container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Profile Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #00E5FF;
+            font-size: 2.2em;
+            margin: 0 0 5px 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #8b949e;
+            margin: 0;
+        }
+
+        /* Section Cards */
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 24px;
+        }
+
+        .card-header {
+            border-bottom: 2px solid #00E5FF;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+        }
+
+        .card-header h2 {
+            margin: 0;
+            color: #58a6ff;
+            font-size: 1.4em;
+        }
+
+        .card-body p {
+            font-size: 1em;
+            line-height: 1.6;
+            margin: 0 0 12px 0;
+        }
+
+        /* Education Entry Formatting */
+        .edu-item {
+            margin-bottom: 16px;
+        }
+
+        .edu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .edu-title {
+            font-weight: bold;
+            color: #f0f6fc;
+            font-size: 1.05em;
+        }
+
+        .edu-date {
+            color: #8b949e;
+            font-size: 0.9em;
+        }
+
+        .edu-school {
+            color: #8b949e;
+            margin-top: 2px;
+        }
+
+        /* Lists */
+        ul {
+            list-style-type: disc;
+            margin: 8px 0 0 20px;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+        strong {
+            color: #f0f6fc;
+        }
+
+        /* Contact Section Styles */
+        .contact-actions {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .contact-btn {
+            background-color: #21262d;
+            color: #c9d1d9;
+            border: 1px solid #30363d;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 0.95em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #30363d;
+            border-color: #8b949e;
+            color: #00E5FF;
+        }
+
+        .contact-display {
+            display: none;
+            text-align: center;
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #0d1117;
+            border-radius: 6px;
+            border: 1px solid #30363d;
+            word-break: break-all;
+        }
+
+        .contact-display a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 1.05em;
+        }
+
+        .contact-display a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <!-- Profile Header -->
+        <header>
+            <h1>Danson Gitau Kimani</h1>
+            <p>Software Engineering Student</p>
+        </header>
+
+        <!-- About Me Section -->
+        <section class="card">
+            <div class="card-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="card-body">
+                <p>An aspiring Software Engineering student with a solid foundation in ICT, passionate about full-stack development. Recently started my Bachelor of Science journey in Software Engineering. Dedicated to constant learning and eager to leverage my technical skills to create efficient, scalable applications.</p>
+                <p><strong>Current focus:</strong></p>
+                <ul>
+                    <li>Presently focused on developing foundational web development skills with HTML, CSS, and JavaScript, and looking for opportunities to grow and apply my knowledge.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Education</h2>
+            </div>
+            <div class="card-body">
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <span class="edu-title">Bachelor of Science in Software Engineering</span>
+                        <span class="edu-date">September 2025</span>
+                    </div>
+                    <div class="edu-school">Co-operative University of Kenya</div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <span class="edu-title">Diploma in Information Communication Technology</span>
+                        <span class="edu-date">June 2021 – November 2023</span>
+                    </div>
+                    <div class="edu-school">Nairobi Institute of Business Studies</div>
+                </div>
+
+                <div class="edu-item">
+                    <div class="edu-header">
+                        <span class="edu-title">Certificate in Microsoft Office Applications</span>
+                        <span class="edu-date">May 2019 – July 2019</span>
+                    </div>
+                    <div class="edu-school">Nairobi Institute of Business Studies</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="card-body">
+                <p><strong>PERSONAL PROJECT (In Progress)</strong></p>
+                <p>Building a personal landing page from scratch to demonstrate foundational web skills.</p>
+                <ul>
+                    <li><strong>Tech Stack:</strong> HTML, CSS, JavaScript (Foundation)</li>
+                    <li>A work-in-progress project to practice layout and basic functionality.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Technical Skills</h2>
+            </div>
+            <div class="card-body">
+                <ul>
+                    <li><strong>Languages:</strong> HTML5, CSS3, JavaScript (Basic)</li>
+                    <li><strong>Core Concepts:</strong> Basic Layouts, Semantic HTML</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Contact</h2>
+            </div>
+            <div class="card-body">
+                <p>Ready to collaborate or discuss front-end positions.</p>
+                
+                <div class="contact-actions">
+                    <button class="contact-btn" id="showEmailBtn">Send Email</button>
+                    <button class="contact-btn" id="showLinkedinBtn">LinkedIn Profile</button>
+                </div>
+
+                <!-- Hidden display box for contact info -->
+                <div class="contact-display" id="contactDisplay"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JavaScript to handle button clicks and displaying content -->
+    <script>
+        const emailBtn = document.getElementById('showEmailBtn');
+        const linkedinBtn = document.getElementById('showLinkedinBtn');
+        const displayBox = document.getElementById('contactDisplay');
+
+        emailBtn.addEventListener('click', function() {
+            displayBox.style.display = 'block';
+            displayBox.innerHTML = '<strong>Email:</strong> <a href="mailto:dansonkimani999@gmail.com">dansonkimani999@gmail.com</a>';
+        });
+
+        linkedinBtn.addEventListener('click', function() {
+            displayBox.style.display = 'block';
+            displayBox.innerHTML = '<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/danson-kimani-87a228244" target="_blank">https://www.linkedin.com/in/danson-kimani-87a228244</a>';
+        });
+    </script>
+
+</body>
+</html>
