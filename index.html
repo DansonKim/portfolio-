@@ -67,36 +67,58 @@
             margin: 0 0 12px 0;
         }
 
-        /* Education Entry Formatting */
-        .edu-item {
-            margin-bottom: 16px;
+        /* Work Experience & Education Entry Formatting */
+        .experience-item, .edu-item, .project-item {
+            margin-bottom: 20px;
         }
 
-        .edu-item:last-child {
+        .experience-item:last-child, .edu-item:last-child, .project-item:last-child {
             margin-bottom: 0;
         }
 
-        .edu-header {
+        .item-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
             flex-wrap: wrap;
         }
 
-        .edu-title {
+        .item-title {
             font-weight: bold;
             color: #f0f6fc;
             font-size: 1.05em;
         }
 
-        .edu-date {
+        .item-date {
             color: #8b949e;
             font-size: 0.9em;
         }
 
-        .edu-school {
+        .item-subtitle {
             color: #8b949e;
             margin-top: 2px;
+            margin-bottom: 8px;
+        }
+
+        .project-tag {
+            display: inline-block;
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            color: #58a6ff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-bottom: 8px;
+        }
+
+        /* Links */
+        a {
+            color: #58a6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         /* Lists */
@@ -189,6 +211,43 @@
             </div>
         </section>
 
+        <!-- Work Experience Section -->
+        <section class="card">
+            <div class="card-header">
+                <h2>Work Experience</h2>
+            </div>
+            <div class="card-body">
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span class="item-title">Marketing Team</span>
+                        <span class="item-date">Remote</span>
+                    </div>
+                    <div class="item-subtitle">Shiftech Africa</div>
+                    <ul>
+                        <li>Managed end-to-end community interaction across primary social media platform.</li>
+                        <li>Analyzing marketing trends to generate appropriate client's needs.</li>
+                        <li>Identified our target audience for our various services.</li>
+                        <li>Collaborated with relevant influencers to market our services to targeted demographics.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="item-header">
+                        <span class="item-title">IT Intern / Front Office Support</span>
+                        <span class="item-date">Ongata Rongai</span>
+                    </div>
+                    <div class="item-subtitle">Rock of Peace Center</div>
+                    <ul>
+                        <li>Assisted clients and visitors by responding to inquiries and providing accurate information.</li>
+                        <li>Supported front office operations including clerical duties and record keeping.</li>
+                        <li>Assisted in scheduling institutional programs and maintaining service records.</li>
+                        <li>Handled customer engagement through phone calls and in-person interactions.</li>
+                        <li>Created posters and digital content to support communication and outreach activities.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <!-- Education Section -->
         <section class="card">
             <div class="card-header">
@@ -196,27 +255,27 @@
             </div>
             <div class="card-body">
                 <div class="edu-item">
-                    <div class="edu-header">
-                        <span class="edu-title">Bachelor of Science in Software Engineering</span>
-                        <span class="edu-date">September 2025</span>
+                    <div class="item-header">
+                        <span class="item-title">Bachelor of Science in Software Engineering</span>
+                        <span class="item-date">September 2025</span>
                     </div>
-                    <div class="edu-school">Co-operative University of Kenya</div>
+                    <div class="item-subtitle">Co-operative University of Kenya</div>
                 </div>
 
                 <div class="edu-item">
-                    <div class="edu-header">
-                        <span class="edu-title">Diploma in Information Communication Technology</span>
-                        <span class="edu-date">June 2021 – November 2023</span>
+                    <div class="item-header">
+                        <span class="item-title">Diploma in Information Communication Technology</span>
+                        <span class="item-date">June 2021 – November 2023</span>
                     </div>
-                    <div class="edu-school">Nairobi Institute of Business Studies</div>
+                    <div class="item-subtitle">Nairobi Institute of Business Studies</div>
                 </div>
 
                 <div class="edu-item">
-                    <div class="edu-header">
-                        <span class="edu-title">Certificate in Microsoft Office Applications</span>
-                        <span class="edu-date">May 2019 – July 2019</span>
+                    <div class="item-header">
+                        <span class="item-title">Certificate in Microsoft Office Applications</span>
+                        <span class="item-date">May 2019 – July 2019</span>
                     </div>
-                    <div class="edu-school">Nairobi Institute of Business Studies</div>
+                    <div class="item-subtitle">Nairobi Institute of Business Studies</div>
                 </div>
             </div>
         </section>
@@ -227,12 +286,18 @@
                 <h2>Featured Projects</h2>
             </div>
             <div class="card-body">
-                <p><strong>PERSONAL PROJECT (In Progress)</strong></p>
-                <p>Building a personal landing page from scratch to demonstrate foundational web skills.</p>
-                <ul>
-                    <li><strong>Tech Stack:</strong> HTML, CSS, JavaScript (Foundation)</li>
-                    <li>A work-in-progress project to practice layout and basic functionality.</li>
-                </ul>
+                <div class="project-item">
+                    <div class="item-header">
+                        <span class="item-title">DGTCAR.MOTORS — Automotive Dealership Platform</span>
+                        <span class="item-date">In Progress</span>
+                    </div>
+                    <div class="project-tag">HTML5 / CSS3 / JavaScript / Web Design</div>
+                    <p>An interactive, high-performance web application built for vehicle cataloging, inventory search, and financing calculations. Designed with dynamic UI sections and modern automotive presentation features.</p>
+                    <ul>
+                        <li><strong>Features:</strong> Interactive vehicle filtration, custom dynamic UI components, and real-time lead capture structure.</li>
+                        <li><strong>Live Preview:</strong> <a href="https://dgtcarsmotors.xo.je" target="_blank">https://dgtcarsmotors.xo.je</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -243,8 +308,8 @@
             </div>
             <div class="card-body">
                 <ul>
-                    <li><strong>Languages:</strong> HTML5, CSS3, JavaScript (Basic)</li>
-                    <li><strong>Core Concepts:</strong> Basic Layouts, Semantic HTML</li>
+                    <li><strong>Languages:</strong> HTML5, CSS3, JavaScript (Basi)</li>
+                    <li><strong>Core Concepts:</strong> Basic Layouts, Semantic HTML, Web Design, Responsive UI</li>
                 </ul>
             </div>
         </section>
@@ -255,7 +320,7 @@
                 <h2>Contact</h2>
             </div>
             <div class="card-body">
-                <p>Ready to collaborate or discuss front-end positions.</p>
+                <p>Ready to collaborate or discuss IT based positions.</p>
                 
                 <div class="contact-actions">
                     <button class="contact-btn" id="showEmailBtn">Send Email</button>
@@ -277,7 +342,7 @@
 
         emailBtn.addEventListener('click', function() {
             displayBox.style.display = 'block';
-            displayBox.innerHTML = '<strong>Email:</strong> <a href="mailto:dansonkimani999@gmail.com">dansonkimani999@gmail.com</a>';
+            displayBox.innerHTML = '<strong>Email:</strong> <a href="mailto:dansonkimani999@gmail.com">dansonkimani999@gmail.com</a><br><br><strong>Phone:</strong> <a href="tel:+254740725877">+254 740 725 877</a>';
         });
 
         linkedinBtn.addEventListener('click', function() {
@@ -288,3 +353,4 @@
 
 </body>
 </html>
+
